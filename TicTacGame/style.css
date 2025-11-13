@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+div {
+    border: 3px solid black;
+    user-select: none;
+    caret-color: transparent;
+    
+
+}
+
+#container {
+    background-color: aquamarine;
+    height: 340px;
+    width: 340px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    align-content: center;
+    border: 5px solid black;
+}
+.box {
+    
+    background-color: white;
+    height: 80px;
+    width: 80px;
+    background-size: cover;
+    
+}
+button {
+    margin-top: 10px;
+    margin-bottom: 30px ;
+    height: 50px;
+    width: 100px;
+    user-select: none;
+    caret-color: transparent;
+
+    border-radius: 50px;
+}
+#winner {
+    text-align: center;
+    background-color: rgb(120, 120, 255);
+    height: 100px;
+    width: 100vw;
+    font-size: 50px;
+}
