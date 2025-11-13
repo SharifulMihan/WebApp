@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    background-color: rgb(255, 130, 228);
+    transition-duration: 300ms;
+}
+
+#todoBox {
+    border: 5px solid white;
+    height: 400px;
+    width: 400px;
+    border-radius: 30px;
+    background-color: white;
+
+    display: flex;
+    
+    
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    transition-duration: 300ms;
+    
+}
+#header {
+    width: 390px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: rgb(254, 254, 254);
+    text-align: center;
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    caret-color: transparent;
+
+}
+#taskText {
+    width: 400px;
+    height: 50px;
+    background-color: aquamarine;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+input {
+    height: 35px;
+    width: 350px;
+    border: none;
+    outline: none;
+    border-color: transparent;
+    font-size: 20px;
+    margin-left: 10px;
+    background-color: transparent;
+}
+#xButton {
+    margin-left: 5px;
+    height: 40px;
+    width: 60px;
+    border-radius: 50px;
+    font-size: 20px;
+    border-color: transparent;
+    background-color: white;
+    cursor: pointer;
+    caret-color: transparent;
+    transition-duration: 1s;
+}
+#xButton:hover {
+    background-color: yellow;
+}
+
+#taskContainer {
+    width: 390px;
+    height: 350px;
+    background-color: transparent;
+    margin-top: 8px;
+    position: relative;
+    cursor: pointer;
+    caret-color: transparent;
+    
+    
+    
+}
+
+ul li {
+    list-style-type: none;
+    font-size: 16px;
+    padding: 12px 8px 12px 50px;
+    background-color: antiquewhite;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 3px;
+    caret-color: transparent; 
+    height: 20px;
+    transition-duration: 300ms;
+    
+}
+#todoBox:hover{
+    height: 450px;
+    width: 420px;
+    border: 2px solid rgb(11, 236, 203);
+    
+}
+
+ul li:hover{
+    height: 30px;
+    font-size: 20px;
+
+}
+
+
+ul li::before{
+    content: '';
+    position:absolute;
+    border: 1px solid rgb(17, 255, 53);
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    left: 8px;
+}
+ul li:hover::before{
+    height: 20px;
+    width: 20px;
+}
+
+li.checked {
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-color: rgb(17, 255, 53);
+
+}
+
+ul li span{
+    height: 25px;
+    width: 25px;
+    position:absolute;
+    right: 10px;
+    margin-bottom: 5px;
+    font-size: 22px;
+    text-align: center;
+    border-radius: 50%;
+    caret-color: transparent;
+}
+ul li span:hover{
+    background-color: rgb(190, 194, 194);
+}
